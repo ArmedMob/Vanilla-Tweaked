@@ -69,8 +69,9 @@ out
 # gradle
 build
 .gradle
+.recommenders
 
 # other
 eclipse
 run
-
+.recommenders
