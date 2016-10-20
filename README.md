@@ -1,5 +1,5 @@
 # Vanilla-Tweaked
-Making Vanilla Minecraft Better For Everyone with a new Forge Mod Vanilla Tweaked.  
+Making Vanilla Minecraft Better For Everyone with a new Forge Mod called Vanilla Tweaked.  
 
 This Mod Requires a Forge Modded Server/Environment/Client  
 
