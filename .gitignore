@@ -75,3 +75,5 @@ build
 eclipse
 run
 .recommenders
+identified-project-coordinates.json
+manual-mappings.json
