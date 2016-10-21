@@ -7,7 +7,7 @@
   	"mcversion": "${mcversion}",
   	"logoFile": "",
   	"url": "http://www.rdsguild.com",
-  	"updateJSON": "",
+  	"updateJSON": "https://gist.githubusercontent.com/ArmedMob/892ded8eda2c10a6ad58ef2cf989cd8b/raw/84154691a9e53f525fb54bd58efc4c9aeecdeb0a/update.json",
   	"authorList": ["Armed Mob"],
   	"credits": "Red Dragons Guild",
   	"parent": "",
