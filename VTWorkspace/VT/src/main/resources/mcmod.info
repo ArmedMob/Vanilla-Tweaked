@@ -1,12 +1,19 @@
-[{
-  "modid": "vtweaked",
-  "name": "Vanilla Tweaked",
-  "description": "A little more fun for Vanilla People!",
-  "version": "0.0.1",
-  "mcversion": "1.10.2",
-  "logoFile": "",
-  "url": "http://www.rdsguild.com",
-  "updateJSON": "",
-  "authorList": ["Armed Mob"],
-  "credits": "Red Dragons Guild",
-}]
+[
+{
+  	"modid": "vtweaked",
+  	"name": "Vanilla Tweaked",
+  	"description": "A little more fun for Vanilla People!",
+  	"version": "${version}",
+  	"mcversion": "${mcversion}",
+  	"logoFile": "",
+  	"url": "http://www.rdsguild.com",
+  	"updateJSON": "",
+  	"authorList": ["Armed Mob"],
+  	"credits": "Red Dragons Guild",
+  	"parent": "",
+  	"screenshots": [],
+	"dependencies": [
+		"mod_MinecraftForge"
+	]	
+}
+]
