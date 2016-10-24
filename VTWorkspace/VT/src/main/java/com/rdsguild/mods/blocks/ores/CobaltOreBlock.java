@@ -6,10 +6,10 @@ import com.rdsguild.mods.items.VTItems;
 import net.minecraft.block.SoundType;
 import net.minecraft.creativetab.CreativeTabs;
 
-public class CopperOreBlock extends BaseBlock {
+public class CobaltOreBlock extends BaseBlock {
 
-	public CopperOreBlock(String name) {
-		super(VTItems.Copper, name);
+	public CobaltOreBlock(String name) {
+		super(VTItems.Cobalt, name);
 		
 		setHardness(3f);
 		setResistance(5f);
@@ -18,7 +18,7 @@ public class CopperOreBlock extends BaseBlock {
 	}
 	
 	@Override
-	public CopperOreBlock setCreativeTab(CreativeTabs tab) {
+	public CobaltOreBlock setCreativeTab(CreativeTabs tab) {
 		super.setCreativeTab(tab);
 		return this;
 	}

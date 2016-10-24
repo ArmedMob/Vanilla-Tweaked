@@ -34,6 +34,7 @@ public class VTItems {
 	public static BaseItem ingotSilicon;
 	public static BaseItem ingotBoron;
 	
+	
 	@SuppressWarnings("unused")
 	private boolean requiresNoTool = true;
 	protected VTItems setRequiresTool()
@@ -42,6 +43,28 @@ public class VTItems {
         return this;
     }
 	public static Material Copper = (new Material(MapColor.IRON));
+	public static Material Tin = (new Material(MapColor.IRON));
+	public static Material Aluminum = (new Material(MapColor.IRON));
+	public static Material Erbium = (new Material(MapColor.IRON));
+	public static Material Europium = (new Material(MapColor.IRON));
+	public static Material Lanthanum = (new Material(MapColor.IRON));
+	public static Material Neodymium = (new Material(MapColor.IRON));
+	public static Material Samarium = (new Material(MapColor.IRON));
+	public static Material Bronze = (new Material(MapColor.IRON));
+	public static Material Steel = (new Material(MapColor.IRON));
+	public static Material Cobalt = (new Material(MapColor.IRON));
+	public static Material Titanium = (new Material(MapColor.IRON));
+	public static Material Columium = (new Material(MapColor.IRON));
+	public static Material Molybdenum = (new Material(MapColor.IRON));
+	public static Material Silver = (new Material(MapColor.IRON));
+	public static Material TriMetal = (new Material(MapColor.IRON));
+	public static Material NickelSilver = (new Material(MapColor.IRON));
+	public static Material Zinc = (new Material(MapColor.IRON));
+	public static Material Lithium = (new Material(MapColor.IRON));
+	public static Material Lead = (new Material(MapColor.IRON));
+	public static Material Silicon = (new Material(MapColor.IRON));
+	public static Material Boron = (new Material(MapColor.IRON));
+	public static Material Nickel = (new Material(MapColor.IRON));
 	
 	public static void init() {
 		

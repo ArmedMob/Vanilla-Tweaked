@@ -27,7 +27,7 @@ item.ingotBoron.name=Boron Ingot
 #Blocks
 tile.oreCopper.name=Copper Ore
 tile.oreTin.name=Tin Ore
-tile.oretAluminum.name=Aluminum Ore
+tile.oreAluminum.name=Aluminum Ore
 tile.oreErbium.name=Erbium Ore
 tile.oreEuropium.name=Europium Ore
 tile.oreLanthanum.name=Lanthanum Ore
