@@ -1,0 +1,55 @@
+#Items
+item.ingotCopper.name=Copper Ingot
+item.ingotTin.name=Tin Ingot
+item.ingotAluminum.name=Aluminum Ingot
+item.ingotErbium.name=Erbium Ingot
+item.ingotEuropium.name=Europium Ingot
+item.ingotLanthanum.name=Lanthanum Ingot
+item.ingotNeodymium.name=Neodymium Ingot
+item.ingotSamarium.name=Samarium Ingot
+item.ingotBronze.name=Bronze Ingot
+item.ingotSteel.name=Steel Ingot
+item.ingotCobalt.name=Cobalt Ingot
+item.ingotTitanium.name=Titanium Ingot
+item.ingotNickel.name=Nickel Ingot
+item.ingotTantalum.name=Tantalum Ingot
+item.ingotColumium.name=Columium Ingot
+item.ingotMolybdenum.name=Molybdenum Ingot
+item.ingotSilver.name=Silver Ingot
+item.ingotTriMetal.name=Tri-Metal Ingot
+item.ingotNickelSilver.name=Nickel-Silver Ingot
+item.ingotZinc.name=Zinc Ingot
+item.ingotLithium.name=Lithium Ingot
+item.ingotLead.name=Lead Ingot
+item.ingotSilicon.name=Silicon
+item.ingotBoron.name=Boron Ingot
+
+#Blocks
+tile.oreCopper.name=Copper Ore
+tile.oreTin.name=Tin Ore
+tile.oretAluminum.name=Aluminum Ore
+tile.oreErbium.name=Erbium Ore
+tile.oreEuropium.name=Europium Ore
+tile.oreLanthanum.name=Lanthanum Ore
+tile.oreNeodymium.name=Neodymium Ore
+tile.oreSamarium.name=Samarium Ore
+tile.oreBronze.name=Bronze Ore
+tile.oreSteel.name=Steel Ore
+tile.oreCobalt.name=Cobalt Ore
+tile.oreTitanium.name=Titanium Ore
+tile.oreNickel.name=Nickel Ore
+tile.oreTantalum.name=Tantalum Ore
+tile.oreColumium.name=Columium Ore
+tile.oreMolybdenum.name=Molybdenum Ore
+tile.oreSilver.name=Silver Ore
+tile.oreTriMetal.name=Tri-Metal Ore
+tile.oreNickelSilver.name=Nickel-Silver Ore
+tile.oreZinc.name=Zinc Ore
+tile.oreLithium.name=Lithium Ore
+tile.oreLead.name=Lead Ore
+tile.oreSilicon.name=Silicon Ore
+tile.oreBoron.name=Boron Ore
+
+
+#CreativeTab
+itemGroup.vtweaked=Vanilla Tweaked

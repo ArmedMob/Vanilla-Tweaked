@@ -2,8 +2,12 @@ package com.rdsguild.mods;
 
 import org.apache.logging.log4j.Logger;
 
+import com.rdsguild.mods.items.VTItems;
 import com.rdsguild.mods.proxies.CommonProxy;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -24,10 +28,23 @@ public class Main {
 	
 	public static Logger logger;
 	
+	public final CreativeTabs tab = new CreativeTabs(References.MODID)  {
+		@Override
+		public ItemStack getIconItemStack() {
+			return new ItemStack(VTItems.ingotCopper);
+		}
+		
+		@Override
+		public Item getTabIconItem() {
+			return null;
+		}
+	};
+	
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event) {
-		logger = event.getModLog();
-		proxy.preInit(event);
+	public void preInit(FMLPreInitializationEvent e) {
+		logger = e.getModLog();
+		proxy.preInit(e);		
+		
 	}
 	
 	@EventHandler

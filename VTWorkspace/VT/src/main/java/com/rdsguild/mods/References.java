@@ -11,4 +11,6 @@ public class References {
 	// Proxy Locations
 	public static final String CLIENT_SIDE_PROXY = "com.rdsguild.mods.proxies.ClientProxy";
 	public static final String SERVER_SIDE_PROXY = "com.rdsguild.mods.proxies.ServerProxy";
+	
+	 
 }
