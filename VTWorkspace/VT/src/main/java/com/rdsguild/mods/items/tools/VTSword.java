@@ -11,17 +11,20 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class VTSword extends ItemSword {
 
+	private String name;
+	
 	public VTSword(ToolMaterial material, String name) {		
 		super(material);
-		this.canRepair = true;
-		this.hasSubtypes = true;
-		setMaxStackSize(1);
 		setRegistryName(name);
-		setUnlocalizedName(name);		
+		setUnlocalizedName(name);
+		this.name = name;
+		this.canRepair = true;
+		this.maxStackSize = 1;
+		this.addInformation(null, null, null, isRepairable());
 	}
 	
 	public void registerItemModel() {
-		Main.proxy.registerItemRenderer(this, 0, this.getUnlocalizedName());
+		Main.proxy.registerItemRenderer(this, 0, name);
 	}
 	
 	@Override
