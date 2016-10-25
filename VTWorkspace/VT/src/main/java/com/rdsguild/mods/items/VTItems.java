@@ -34,6 +34,7 @@ public class VTItems {
 	public static Material NickelSilver = (new Material(MapColor.IRON));	
 	public static Material Lithium = (new Material(MapColor.IRON));	
 	public static Material Boron = (new Material(MapColor.IRON));
+	public static Material Tantalum = (new Material(MapColor.IRON));
 	
 	
 	// Tool Materials
@@ -49,6 +50,7 @@ public class VTItems {
 	public static ToolMaterial toolNickelSilver = EnumHelper.addToolMaterial("toolNickelSilver", 3, 1500, 15, 2500, 30);	
 	public static ToolMaterial toolLithium = EnumHelper.addToolMaterial("toolLithium", 3, 1500, 15, 2500, 30);
 	public static ToolMaterial toolBoron = EnumHelper.addToolMaterial("toolBoron", 3, 1500, 15, 2500, 30);
+	public static ToolMaterial toolTantalum = EnumHelper.addToolMaterial("toolTantalum", 3, 1500, 15, 2500, 30);
 	
 	public static ArmorMaterial armorErbium = EnumHelper.addArmorMaterial("armorErbium", "armorErbium", 1500, new int[]{2, 5, 6, 2} , 30, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F);
 	public static ArmorMaterial armorEuropium = EnumHelper.addArmorMaterial("armorEuropium", "armorEuropium", 1500, new int[]{2, 5, 6, 2} , 30, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F);
@@ -62,11 +64,13 @@ public class VTItems {
 	public static ArmorMaterial armorNickelSilver = EnumHelper.addArmorMaterial("armorNickelSilver", "armorNickelSilver", 1500, new int[]{2, 5, 6, 2} , 30, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F);	
 	public static ArmorMaterial armorLithium = EnumHelper.addArmorMaterial("armorLithium", "armorLithium", 1500, new int[]{2, 5, 6, 2} , 30, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F);
 	public static ArmorMaterial armorBoron = EnumHelper.addArmorMaterial("armorBoron", "armorBoron", 1500, new int[]{2, 5, 6, 2} , 30, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F);
+	public static ArmorMaterial armorTantalum = EnumHelper.addArmorMaterial("armorTantalum", "armorTantalum", 1500, new int[]{2, 5, 6, 2} , 30, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F);
 		
 	public static void init() {			
 				
 	}
 	
+	@SuppressWarnings("unused")
 	private static <T extends Item> T register(T item) {
 		GameRegistry.register(item);
 		

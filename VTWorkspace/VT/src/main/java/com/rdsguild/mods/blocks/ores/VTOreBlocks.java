@@ -20,6 +20,7 @@ public class VTOreBlocks {
 	public static NeodymiumOreBlock oreNeodymium;	
 	public static NickelSilverOreBlock oreNickelSilver;
 	public static SamariumOreBlock oreSamarium;	
+	public static TantalumOreBlock oreTantalum;
 	public static TitaniumOreBlock oreTitanium;
 	public static TriMetalOreBlock oreTriMetal;	
 	
@@ -34,7 +35,8 @@ public class VTOreBlocks {
 		oreMolybdenum = register(new MolybdenumOreBlock("oreMolybdenum").setCreativeTab(Main.instance.tab));
 		oreNeodymium = register(new NeodymiumOreBlock("oreNeodymium").setCreativeTab(Main.instance.tab));		
 		oreNickelSilver = register(new NickelSilverOreBlock("oreNickelSilver").setCreativeTab(Main.instance.tab));
-		oreSamarium = register(new SamariumOreBlock("oreSamarium").setCreativeTab(Main.instance.tab));		
+		oreSamarium = register(new SamariumOreBlock("oreSamarium").setCreativeTab(Main.instance.tab));
+		oreTantalum = register(new TantalumOreBlock("oreTantalum").setCreativeTab(Main.instance.tab));
 		oreTitanium = register(new TitaniumOreBlock("oreTitanium").setCreativeTab(Main.instance.tab));
 		oreTriMetal = register(new TriMetalOreBlock("oreTriMetal").setCreativeTab(Main.instance.tab));		
 	}

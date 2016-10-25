@@ -62,6 +62,38 @@ tile.oreNickelSilver.name=Nickel-Silver Ore
 tile.oreLithium.name=Lithium Ore
 tile.oreBoron.name=Boron Ore
 
+#Blocks
+
+tile.blockErbium.name=Erbium Block
+tile.blockEuropium.name=Europium Block
+tile.blockLanthanum.name=Lanthanum Block
+tile.blockNeodymium.name=Neodymium Block
+tile.blockSamarium.name=Samarium Block
+tile.blockTitanium.name=Titanium Block
+tile.blockTantalum.name=Tantalum Block
+tile.blockColumium.name=Columium Block
+tile.blockMolybdenum.name=Molybdenum Block
+tile.blockTriMetal.name=Tri-Metal Block
+tile.blockNickelSilver.name=Nickel-Silver Block
+tile.blockLithium.name=Lithium Block
+tile.blockBoron.name=Boron Block
+
 #CreativeTab
 
 itemGroup.vtweaked=Vanilla Tweaked
+
+#Swords
+
+item.swordColumium.name=Columium Sword
+item.swordBoron.name=Boron Sword
+item.swordErbium.name=Erbium Sword
+item.swordEuropium.name=Europium Sword
+item.swordLanthanum.name=Lanthanum Sword
+item.swordLithium.name=Lithium Sword
+item.swordMolybdenum.name=Molybdenum Sword
+item.swordNeodymium.name=Neodymium Sword
+item.swordNickelSilver.name=NickelSilver Sword
+item.swordSamarium.name=Samarium Sword
+item.swordTantalum.name=Tantalum Sword
+item.swordTitanium.name=Titanium Sword
+item.swordTriMetal.name=Tri-Metal Sword

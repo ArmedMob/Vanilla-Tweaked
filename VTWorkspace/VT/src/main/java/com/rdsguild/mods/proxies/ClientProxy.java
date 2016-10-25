@@ -7,6 +7,7 @@ import com.rdsguild.mods.items.VTDusts;
 import com.rdsguild.mods.items.VTIngots;
 import com.rdsguild.mods.items.VTItems;
 import com.rdsguild.mods.items.VTNuggets;
+import com.rdsguild.mods.items.tools.VTSword;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -33,5 +34,6 @@ public class ClientProxy extends CommonProxy {
 		VTItems.init();
 		VTBlocks.init();
 		VTOreBlocks.init();
+		VTSword.init();
 	}
 }
