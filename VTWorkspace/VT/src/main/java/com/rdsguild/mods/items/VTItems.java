@@ -11,24 +11,7 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class VTItems {
-
-	
-	public static BaseItem ingotErbium;
-	public static BaseItem ingotEuropium;
-	public static BaseItem ingotLanthanum;
-	public static BaseItem ingotNeodymium;
-	public static BaseItem ingotSamarium;	
-	public static BaseItem ingotTitanium;	
-	public static BaseItem ingotTantalum;
-	public static BaseItem ingotColumium;
-	public static BaseItem ingotMolybdenum;	
-	public static BaseItem ingotTriMetal;
-	public static BaseItem ingotNickelSilver;	
-	public static BaseItem ingotLithium;	
-	public static BaseItem ingotBoron;
-	
-	
+public class VTItems {	
 	
 	@SuppressWarnings("unused")
 	private boolean requiresNoTool = true;
@@ -80,21 +63,8 @@ public class VTItems {
 	public static ArmorMaterial armorLithium = EnumHelper.addArmorMaterial("armorLithium", "armorLithium", 1500, new int[]{2, 5, 6, 2} , 30, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F);
 	public static ArmorMaterial armorBoron = EnumHelper.addArmorMaterial("armorBoron", "armorBoron", 1500, new int[]{2, 5, 6, 2} , 30, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F);
 		
-	public static void init() {		
-		
-		ingotErbium = register(new BaseItem("ingotErbium").setCreativeTab(Main.instance.tab));
-		ingotEuropium = register(new BaseItem("ingotEuropium").setCreativeTab(Main.instance.tab));
-		ingotLanthanum = register(new BaseItem("ingotLanthanum").setCreativeTab(Main.instance.tab));
-		ingotNeodymium = register(new BaseItem("ingotNeodymium").setCreativeTab(Main.instance.tab));
-		ingotSamarium = register(new BaseItem("ingotSamarium").setCreativeTab(Main.instance.tab));		
-		ingotTitanium = register(new BaseItem("ingotTitanium").setCreativeTab(Main.instance.tab));
-		ingotTantalum = register(new BaseItem("ingotTantalum").setCreativeTab(Main.instance.tab));
-		ingotColumium = register(new BaseItem("ingotColumium").setCreativeTab(Main.instance.tab));
-		ingotMolybdenum = register(new BaseItem("ingotMolybdenum").setCreativeTab(Main.instance.tab));		
-		ingotTriMetal = register(new BaseItem("ingotTriMetal").setCreativeTab(Main.instance.tab));
-		ingotNickelSilver = register(new BaseItem("ingotNickelSilver").setCreativeTab(Main.instance.tab));		
-		ingotLithium = register(new BaseItem("ingotLithium").setCreativeTab(Main.instance.tab));		
-		ingotBoron = register(new BaseItem("ingotBoron").setCreativeTab(Main.instance.tab));		
+	public static void init() {			
+				
 	}
 	
 	private static <T extends Item> T register(T item) {

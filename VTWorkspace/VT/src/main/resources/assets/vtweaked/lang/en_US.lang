@@ -1,55 +1,67 @@
-#Items
-item.ingotCopper.name=Copper Ingot
-item.ingotTin.name=Tin Ingot
-item.ingotAluminum.name=Aluminum Ingot
+#Ingots
+
 item.ingotErbium.name=Erbium Ingot
 item.ingotEuropium.name=Europium Ingot
 item.ingotLanthanum.name=Lanthanum Ingot
 item.ingotNeodymium.name=Neodymium Ingot
 item.ingotSamarium.name=Samarium Ingot
-item.ingotBronze.name=Bronze Ingot
-item.ingotSteel.name=Steel Ingot
-item.ingotCobalt.name=Cobalt Ingot
 item.ingotTitanium.name=Titanium Ingot
-item.ingotNickel.name=Nickel Ingot
 item.ingotTantalum.name=Tantalum Ingot
 item.ingotColumium.name=Columium Ingot
 item.ingotMolybdenum.name=Molybdenum Ingot
-item.ingotSilver.name=Silver Ingot
 item.ingotTriMetal.name=Tri-Metal Ingot
 item.ingotNickelSilver.name=Nickel-Silver Ingot
-item.ingotZinc.name=Zinc Ingot
 item.ingotLithium.name=Lithium Ingot
-item.ingotLead.name=Lead Ingot
-item.ingotSilicon.name=Silicon
 item.ingotBoron.name=Boron Ingot
 
-#Blocks
-tile.oreCopper.name=Copper Ore
-tile.oreTin.name=Tin Ore
-tile.oreAluminum.name=Aluminum Ore
+#Nuggets
+
+item.nuggetErbium.name=Erbium Nugget
+item.nuggetEuropium.name=Europium Nugget
+item.nuggetLanthanum.name=Lanthanum Nugget
+item.nuggetNeodymium.name=Neodymium Nugget
+item.nuggetSamarium.name=Samarium Nugget
+item.nuggetTitanium.name=Titanium Nugget
+item.nuggetTantalum.name=Tantalum Nugget
+item.nuggetColumium.name=Columium Nugget
+item.nuggetMolybdenum.name=Molybdenum Nugget
+item.nuggetTriMetal.name=Tri-Metal Nugget
+item.nuggetNickelSilver.name=Nickel-Silver Nugget
+item.nuggetLithium.name=Lithium Nugget
+item.nuggetBoron.name=Boron Nugget
+
+#Dusts
+
+item.dustErbium.name=Erbium Dust
+item.dustEuropium.name=Europium Dust
+item.dustLanthanum.name=Lanthanum Dust
+item.dustNeodymium.name=Neodymium Dust
+item.dustSamarium.name=Samarium Dust
+item.dustTitanium.name=Titanium Dust
+item.dustTantalum.name=Tantalum Dust
+item.dustColumium.name=Columium Dust
+item.dustMolybdenum.name=Molybdenum Dust
+item.dustTriMetal.name=Tri-Metal Dust
+item.dustNickelSilver.name=Nickel-Silver Dust
+item.dustLithium.name=Lithium Dust
+item.dustBoron.name=Boron Dust
+
+#Ores
+
 tile.oreErbium.name=Erbium Ore
 tile.oreEuropium.name=Europium Ore
 tile.oreLanthanum.name=Lanthanum Ore
 tile.oreNeodymium.name=Neodymium Ore
 tile.oreSamarium.name=Samarium Ore
-tile.oreBronze.name=Bronze Ore
-tile.oreSteel.name=Steel Ore
-tile.oreCobalt.name=Cobalt Ore
 tile.oreTitanium.name=Titanium Ore
-tile.oreNickel.name=Nickel Ore
 tile.oreTantalum.name=Tantalum Ore
 tile.oreColumium.name=Columium Ore
 tile.oreMolybdenum.name=Molybdenum Ore
-tile.oreSilver.name=Silver Ore
 tile.oreTriMetal.name=Tri-Metal Ore
 tile.oreNickelSilver.name=Nickel-Silver Ore
-tile.oreZinc.name=Zinc Ore
 tile.oreLithium.name=Lithium Ore
-tile.oreLead.name=Lead Ore
-tile.oreSilicon.name=Silicon Ore
 tile.oreBoron.name=Boron Ore
 
-
 #CreativeTab
+
 itemGroup.vtweaked=Vanilla Tweaked

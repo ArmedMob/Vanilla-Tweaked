@@ -2,7 +2,7 @@ package com.rdsguild.mods;
 
 import org.apache.logging.log4j.Logger;
 
-import com.rdsguild.mods.items.VTItems;
+import com.rdsguild.mods.items.VTIngots;
 import com.rdsguild.mods.proxies.CommonProxy;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -31,7 +31,7 @@ public class Main {
 	public final CreativeTabs tab = new CreativeTabs(References.MODID)  {
 		@Override
 		public ItemStack getIconItemStack() {
-			return new ItemStack(VTItems.ingotLithium);
+			return new ItemStack(VTIngots.ingotLithium);
 		}
 		
 		@Override
