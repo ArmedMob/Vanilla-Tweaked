@@ -31,7 +31,7 @@ public class Main {
 	public final CreativeTabs tab = new CreativeTabs(References.MODID)  {
 		@Override
 		public ItemStack getIconItemStack() {
-			return new ItemStack(VTItems.ingotCopper);
+			return new ItemStack(VTItems.ingotLithium);
 		}
 		
 		@Override

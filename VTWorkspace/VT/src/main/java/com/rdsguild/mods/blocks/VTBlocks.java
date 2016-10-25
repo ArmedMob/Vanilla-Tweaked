@@ -9,10 +9,32 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class VTBlocks {
 
-	public static BaseBlock blockCopper;
+	public static BaseBlock blockBoron;	
+	public static BaseBlock blockColumium;
+	public static BaseBlock blockErbium;
+	public static BaseBlock blockEuropium;
+	public static BaseBlock blockLanthanum;	
+	public static BaseBlock blockLithium;
+	public static BaseBlock blockMolybdenum;
+	public static BaseBlock blockNeodymium;	
+	public static BaseBlock blockNickelSilver;
+	public static BaseBlock blockSamarium;	
+	public static BaseBlock blockTitanium;
+	public static BaseBlock blockTriMetal;	
 	
 	public static void init() {
-		blockCopper = new BaseBlock(VTItems.Copper, "blockCopper").setCreativeTab(Main.instance.tab);
+		blockBoron = new BaseBlock(VTItems.Boron, "blockBoron").setCreativeTab(Main.instance.tab);
+		blockColumium = new BaseBlock(VTItems.Columium, "blockColumium").setCreativeTab(Main.instance.tab);
+		blockErbium = new BaseBlock(VTItems.Erbium, "blockErbium").setCreativeTab(Main.instance.tab);
+		blockEuropium = new BaseBlock(VTItems.Europium, "blockEuropium").setCreativeTab(Main.instance.tab);
+		blockLanthanum = new BaseBlock(VTItems.Lanthanum, "blockLanthanum").setCreativeTab(Main.instance.tab);
+		blockLithium = new BaseBlock(VTItems.Lithium, "blockLithium").setCreativeTab(Main.instance.tab);
+		blockMolybdenum = new BaseBlock(VTItems.Molybdenum, "blockMolybdenum").setCreativeTab(Main.instance.tab);
+		blockNeodymium = new BaseBlock(VTItems.Neodymium, "blockNeodymium").setCreativeTab(Main.instance.tab);
+		blockNickelSilver = new BaseBlock(VTItems.NickelSilver, "blockNickelSilver").setCreativeTab(Main.instance.tab);
+		blockSamarium = new BaseBlock(VTItems.Samarium, "blockSamarium").setCreativeTab(Main.instance.tab);
+		blockTitanium = new BaseBlock(VTItems.Titanium, "blockTitanium").setCreativeTab(Main.instance.tab);
+		blockTriMetal = new BaseBlock(VTItems.TriMetal, "blockTriMetal").setCreativeTab(Main.instance.tab);		
 	}
 	
 	private static <T extends Block> T register(T block, ItemBlock itemBlock) {
@@ -26,6 +48,7 @@ public class VTBlocks {
 		return block;
 	}
 	
+	@SuppressWarnings("unused")
 	private static <T extends Block> T register(T block) {
 		ItemBlock itemBlock = new ItemBlock(block);
 		itemBlock.setRegistryName(block.getRegistryName());
