@@ -50,6 +50,7 @@ public class Main {
 		logger = e.getModLog();
 		proxy.preInit(e);		
 		
+		
 	}
 	
 	@EventHandler

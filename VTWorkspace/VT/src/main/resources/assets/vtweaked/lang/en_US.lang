@@ -82,6 +82,9 @@ tile.blockBoron.name=Boron Block
 
 itemGroup.vtweaked=Vanilla Tweaked
 
+#Axes
+item.axeBoron.name=Boron Axe
+
 #Swords
 
 item.swordColumium.name=Columium Sword

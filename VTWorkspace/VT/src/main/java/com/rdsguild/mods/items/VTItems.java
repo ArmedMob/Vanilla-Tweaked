@@ -1,6 +1,12 @@
 package com.rdsguild.mods.items;
 
 import com.rdsguild.mods.Main;
+import com.rdsguild.mods.References;
+import com.rdsguild.mods.items.tools.VTAxe;
+import com.rdsguild.mods.items.tools.VTHoe;
+import com.rdsguild.mods.items.tools.VTPickaxe;
+import com.rdsguild.mods.items.tools.VTSpade;
+import com.rdsguild.mods.items.tools.VTSword;
 
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -11,7 +17,9 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 
+@ObjectHolder(References.MODID)
 public class VTItems {	
 		
 	// Materials
@@ -30,19 +38,21 @@ public class VTItems {
 	public static Material Tantalum = (new Material(MapColor.IRON));
 	
 	// Tool Materials
-	public static ToolMaterial toolErbium = EnumHelper.addToolMaterial("toolErbium", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotErbium));
-	public static ToolMaterial toolEuropium = EnumHelper.addToolMaterial("toolEuropium", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotEuropium));
-	public static ToolMaterial toolLanthanum = EnumHelper.addToolMaterial("toolLanthanum", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotLanthanum));
-	public static ToolMaterial toolNeodymium = EnumHelper.addToolMaterial("toolNeodymium", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotEuropium));
-	public static ToolMaterial toolSamarium = EnumHelper.addToolMaterial("toolSamarium", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotSamarium));	
-	public static ToolMaterial toolTitanium = EnumHelper.addToolMaterial("toolTitanium", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotTitanium));
-	public static ToolMaterial toolColumium = EnumHelper.addToolMaterial("toolColumium", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotColumium));
-	public static ToolMaterial toolMolybdenum = EnumHelper.addToolMaterial("toolMolybdenum", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotMolybdenum));
-	public static ToolMaterial toolTriMetal = EnumHelper.addToolMaterial("toolTriMetal", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotTriMetal));
-	public static ToolMaterial toolNickelSilver = EnumHelper.addToolMaterial("toolNickelSilver", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotNickelSilver));
-	public static ToolMaterial toolLithium = EnumHelper.addToolMaterial("toolLithium", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotLithium));
-	public static ToolMaterial toolBoron = EnumHelper.addToolMaterial("toolBoron", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotBoron));
-	public static ToolMaterial toolTantalum = EnumHelper.addToolMaterial("toolTantalum", 3, 1500, 15, 2500, 30).setRepairItem(new ItemStack(VTItems.ingotTantalum));
+	public static class ToolMaterials {
+		public static final ToolMaterial toolErbium = EnumHelper.addToolMaterial("toolErbium", 3, 1500, 15, 2500, 30);
+		public static final ToolMaterial toolEuropium = EnumHelper.addToolMaterial("toolEuropium", 3, 1500, 15, 2500, 30);
+		public static final ToolMaterial toolLanthanum = EnumHelper.addToolMaterial("toolLanthanum", 3, 1500, 15, 2500, 30);
+		public static final ToolMaterial toolNeodymium = EnumHelper.addToolMaterial("toolNeodymium", 3, 1500, 15, 2500, 30);
+		public static final ToolMaterial toolSamarium = EnumHelper.addToolMaterial("toolSamarium", 3, 1500, 15, 2500, 30);	
+		public static final ToolMaterial toolTitanium = EnumHelper.addToolMaterial("toolTitanium", 3, 1500, 15, 2500, 30);
+		public static final ToolMaterial toolColumium = EnumHelper.addToolMaterial("toolColumium", 3, 1500, 15, 2500, 30);
+		public static final ToolMaterial toolMolybdenum = EnumHelper.addToolMaterial("toolMolybdenum", 3, 1500, 15, 2500, 30);
+		public static final ToolMaterial toolTriMetal = EnumHelper.addToolMaterial("toolTriMetal", 3, 1500, 15, 2500, 30);
+		public static final ToolMaterial toolNickelSilver = EnumHelper.addToolMaterial("toolNickelSilver", 3, 1500, 15, 2500, 30);
+		public static final ToolMaterial toolLithium = EnumHelper.addToolMaterial("toolLithium", 3, 1500, 15, 2500, 30);
+		public static final ToolMaterial toolBoron = EnumHelper.addToolMaterial("toolBoron", 3, 1500, 15, 2500, 30);
+		public static final ToolMaterial toolTantalum = EnumHelper.addToolMaterial("toolTantalum", 3, 1500, 15, 2500, 30);
+	}
 	
 	// Armor Materials
 	public static ArmorMaterial armorErbium = EnumHelper.addArmorMaterial("armorErbium", "armorErbium", 1500, new int[]{2, 5, 6, 2} , 30, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 10.0F);
@@ -104,7 +114,51 @@ public class VTItems {
 	public static BaseItem nuggetLithium;	
 	public static BaseItem nuggetBoron;
 	
+	// Axes
+	public static VTAxe axeBoron;
+	public static VTAxe axeColumium;
+	public static VTAxe axeErbium;
+	public static VTAxe axeEuropium;
+	public static VTAxe axeLanthanum;
+	public static VTAxe axeLithium;
+	public static VTAxe axeMolybdenum;
+	public static VTAxe axeNeodymium;
+	public static VTAxe axeNickelSilver;
+	public static VTAxe axeSamarium;
+	public static VTAxe axeTantalum;
+	public static VTAxe axeTitanium;
+	public static VTAxe axeTriMetal;
+	
+	// Swords
+	public static VTSword swordBoron;
+	public static VTSword swordColumium;
+	public static VTSword swordErbium;
+	public static VTSword swordEuropium;
+	public static VTSword swordLanthanum;
+	public static VTSword swordLithium;
+	public static VTSword swordMolybdenum;
+	public static VTSword swordNeodymium;
+	public static VTSword swordNickelSilver;
+	public static VTSword swordSamarium;
+	public static VTSword swordTantalum;
+	public static VTSword swordTitanium;
+	public static VTSword swordTriMetal;
+	
 	public static void init() {			
+		//ToolMaterial
+		ToolMaterials.toolBoron.setRepairItem(new ItemStack(VTItems.ingotBoron));
+		ToolMaterials.toolColumium.setRepairItem(new ItemStack(VTItems.ingotColumium));
+		ToolMaterials.toolErbium.setRepairItem(new ItemStack(VTItems.ingotErbium));
+		ToolMaterials.toolEuropium.setRepairItem(new ItemStack(VTItems.ingotEuropium));
+		ToolMaterials.toolLanthanum.setRepairItem(new ItemStack(VTItems.ingotLanthanum));
+		ToolMaterials.toolLithium.setRepairItem(new ItemStack(VTItems.ingotLithium));
+		ToolMaterials.toolMolybdenum.setRepairItem(new ItemStack(VTItems.ingotMolybdenum));
+		ToolMaterials.toolNeodymium.setRepairItem(new ItemStack(VTItems.ingotNeodymium));
+		ToolMaterials.toolNickelSilver.setRepairItem(new ItemStack(VTItems.ingotNickelSilver));
+		ToolMaterials.toolSamarium.setRepairItem(new ItemStack(VTItems.ingotSamarium));
+		ToolMaterials.toolTantalum.setRepairItem(new ItemStack(VTItems.ingotTantalum));
+		ToolMaterials.toolTitanium.setRepairItem(new ItemStack(VTItems.ingotTitanium));
+		ToolMaterials.toolTriMetal.setRepairItem(new ItemStack(VTItems.ingotTriMetal));
 		
 		// VTIngots
 		ingotErbium = register(new BaseItem("ingotErbium").setCreativeTab(Main.instance.tab));
@@ -150,6 +204,36 @@ public class VTItems {
 		nuggetNickelSilver = register(new BaseItem("nuggetNickelSilver").setCreativeTab(Main.instance.tab));		
 		nuggetLithium = register(new BaseItem("nuggetLithium").setCreativeTab(Main.instance.tab));		
 		nuggetBoron = register(new BaseItem("nuggetBoron").setCreativeTab(Main.instance.tab));
+		
+		// Axes
+		axeBoron = register(new VTAxe(ToolMaterials.toolBoron, "axeBoron")); 
+		axeColumium = register(new VTAxe(ToolMaterials.toolColumium, "axeColumium"));
+		axeErbium = register(new VTAxe(ToolMaterials.toolErbium, "axeErbium"));
+		axeEuropium = register(new VTAxe(ToolMaterials.toolEuropium, "axeEuropium"));
+		axeLanthanum = register(new VTAxe(ToolMaterials.toolLanthanum, "axeLanthanum"));
+		axeLithium = register(new VTAxe(ToolMaterials.toolLithium, "axeLithium"));
+		axeMolybdenum = register(new VTAxe(ToolMaterials.toolMolybdenum, "axeMolybdenum"));
+		axeNeodymium = register(new VTAxe(ToolMaterials.toolNeodymium, "axeNeodymium"));
+		axeNickelSilver = register(new VTAxe(ToolMaterials.toolNickelSilver, "axeNickelSilver"));
+		axeSamarium = register(new VTAxe(ToolMaterials.toolSamarium, "axeSamarium"));
+		axeTantalum = register(new VTAxe(ToolMaterials.toolTantalum, "axeTantalum"));
+		axeTitanium = register(new VTAxe(ToolMaterials.toolTitanium, "axeTitanium"));
+		axeTriMetal = register(new VTAxe(ToolMaterials.toolTriMetal, "axeTriMetal"));
+		
+		// Swords
+		swordBoron = register(new VTSword(ToolMaterials.toolBoron, "swordBoron"));
+		swordColumium = register(new VTSword(ToolMaterials.toolColumium, "swordColumium"));
+		swordErbium = register(new VTSword(ToolMaterials.toolErbium, "swordErbium"));
+		swordEuropium = register(new VTSword(ToolMaterials.toolEuropium, "swordEuropium"));
+		swordLanthanum = register(new VTSword(ToolMaterials.toolLanthanum, "swordLanthanum"));
+		swordLithium = register(new VTSword(ToolMaterials.toolLithium, "swordLithium"));
+		swordMolybdenum = register(new VTSword(ToolMaterials.toolMolybdenum, "swordMolybdenum"));
+		swordNeodymium = register(new VTSword(ToolMaterials.toolNeodymium, "swordNeodymium"));
+		swordNickelSilver = register(new VTSword(ToolMaterials.toolNickelSilver, "swordNickelSilver"));
+		swordSamarium = register(new VTSword(ToolMaterials.toolSamarium, "swordSamarium"));
+		swordTantalum = register(new VTSword(ToolMaterials.toolTantalum, "swordTantalum"));
+		swordTitanium = register(new VTSword(ToolMaterials.toolTitanium, "swordTitanium"));
+		swordTriMetal = register(new VTSword(ToolMaterials.toolTriMetal, "swordTriMetal"));
 	}
 		
 	private static <T extends Item> T register(T item) {
@@ -157,6 +241,26 @@ public class VTItems {
 		
 		if (item instanceof BaseItem) {
 			((BaseItem)item).registerItemModel();
+		}
+		
+		if (item instanceof VTAxe) {
+			((VTAxe)item).registerItemModel(item);
+		}
+		
+		if (item instanceof VTSword) {
+			((VTSword)item).registerItemModel(item);
+		}
+		
+		if (item instanceof VTHoe) {
+			((VTHoe)item).registerItemModel(item);
+		}
+		
+		if (item instanceof VTSpade) {
+			((VTSpade)item).registerItemModel(item);
+		}
+		
+		if (item instanceof VTPickaxe) {
+			((VTPickaxe)item).registerItemModel(item);
 		}
 		
 		return item;

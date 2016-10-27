@@ -24,11 +24,12 @@ public class CommonProxy {
 		config = new Configuration(new File(directory.getPath(), "vtweaked.cfg"));
 		Config.readConfig();	
 	
-		
+			
 	}
 	
 	public void init(FMLInitializationEvent e) {
 		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiProxy());
+		
 		
 		VTRecipies.init();
 		VTMapGen.registerWorldGenerators();
@@ -41,7 +42,6 @@ public class CommonProxy {
 	}	
 
 	public void registerItemRenderer(Item item, int meta, String id) {
-		// TODO Auto-generated method stub
-		
+				
 	}
 }
