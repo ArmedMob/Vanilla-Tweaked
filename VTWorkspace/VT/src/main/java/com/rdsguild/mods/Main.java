@@ -2,12 +2,13 @@ package com.rdsguild.mods;
 
 import org.apache.logging.log4j.Logger;
 
-import com.rdsguild.mods.items.VTIngots;
+import com.rdsguild.mods.items.VTItems;
 import com.rdsguild.mods.proxies.CommonProxy;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -31,7 +32,7 @@ public class Main {
 	public final CreativeTabs tab = new CreativeTabs(References.MODID)  {
 		@Override
 		public ItemStack getIconItemStack() {
-			return new ItemStack(VTIngots.ingotLithium);
+			return new ItemStack(VTItems.ingotLithium);
 		}
 		
 		@Override
@@ -39,6 +40,10 @@ public class Main {
 			return null;
 		}
 	};
+	
+	static {
+		FluidRegistry.enableUniversalBucket();
+	}
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {

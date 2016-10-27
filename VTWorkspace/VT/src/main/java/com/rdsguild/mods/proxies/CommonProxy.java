@@ -4,6 +4,9 @@ import java.io.File;
 
 import com.rdsguild.mods.Config;
 import com.rdsguild.mods.Main;
+import com.rdsguild.mods.VTRecipies;
+import com.rdsguild.mods.world.VTMapGen;
+
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -26,6 +29,9 @@ public class CommonProxy {
 	
 	public void init(FMLInitializationEvent e) {
 		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiProxy());
+		
+		VTRecipies.init();
+		VTMapGen.registerWorldGenerators();
 	}
 	
 	public void postInit(FMLPostInitializationEvent e) {

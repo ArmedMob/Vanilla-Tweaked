@@ -3,12 +3,7 @@ package com.rdsguild.mods.proxies;
 import com.rdsguild.mods.References;
 import com.rdsguild.mods.blocks.VTBlocks;
 import com.rdsguild.mods.blocks.ores.VTOreBlocks;
-import com.rdsguild.mods.items.VTDusts;
-import com.rdsguild.mods.items.VTIngots;
 import com.rdsguild.mods.items.VTItems;
-import com.rdsguild.mods.items.VTNuggets;
-import com.rdsguild.mods.items.tools.VTSword;
-
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
@@ -27,13 +22,9 @@ public class ClientProxy extends CommonProxy {
 		super.preInit(e);
 		
 		MinecraftForge.EVENT_BUS.register(this);
-		
-		VTIngots.init();
-		VTNuggets.init();
-		VTDusts.init();
+				
 		VTItems.init();
 		VTBlocks.init();
-		VTOreBlocks.init();
-		VTSword.init();
+		VTOreBlocks.init();		
 	}
 }
