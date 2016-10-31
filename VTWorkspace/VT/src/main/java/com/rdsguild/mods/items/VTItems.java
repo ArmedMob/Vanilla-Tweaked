@@ -2,6 +2,8 @@ package com.rdsguild.mods.items;
 
 import com.rdsguild.mods.Main;
 import com.rdsguild.mods.References;
+import com.rdsguild.mods.items.tools.VTAxe;
+
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.SoundEvents;
@@ -109,7 +111,7 @@ public class VTItems {
 	public static BaseItem nuggetBoron;
 	
 	// Axes
-	
+	public static VTAxe axeBoron;
 	
 	public static void init() {			
 		//ToolMaterial
@@ -173,7 +175,7 @@ public class VTItems {
 		nuggetBoron = register(new BaseItem("nuggetBoron", "nuggetBoron").setCreativeTab(Main.instance.tab));
 		
 		// Axes
-		
+		axeBoron = register(new VTAxe(VTItems.ToolMaterials.toolBoron, "axeBoron"));
 	}
 		
 	private static <T extends Item> T register(T item) {
