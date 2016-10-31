@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class ColumiumOreBlock extends BaseBlock {
 
-	public ColumiumOreBlock(String name) {
+	public ColumiumOreBlock(String name, String oreName) {
 		super(VTItems.Columium, name);
 		
 		setHardness(3f);

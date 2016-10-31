@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class NickelSilverOreBlock extends BaseBlock {
 
-	public NickelSilverOreBlock(String name) {
+	public NickelSilverOreBlock(String name, String oreName) {
 		super(VTItems.NickelSilver, name);
 		
 		setHardness(3f);

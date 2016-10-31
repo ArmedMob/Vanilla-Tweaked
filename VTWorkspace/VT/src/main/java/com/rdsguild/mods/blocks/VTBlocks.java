@@ -1,6 +1,8 @@
 package com.rdsguild.mods.blocks;
 
 import com.rdsguild.mods.Main;
+import com.rdsguild.mods.items.ItemModelProvider;
+import com.rdsguild.mods.items.ItemOreDict;
 import com.rdsguild.mods.items.VTItems;
 
 import net.minecraft.block.Block;
@@ -43,8 +45,14 @@ public class VTBlocks {
 		GameRegistry.register(block);
 		GameRegistry.register(itemBlock);
 		
-		if (block instanceof BaseBlock) {
-			((BaseBlock)block).registerItemModel(itemBlock);
+		if (block instanceof ItemModelProvider) {
+			((ItemModelProvider)block).registerItemModel(itemBlock);
+		}
+		if (block instanceof ItemOreDict) {
+			((ItemOreDict)block).initOreDict();
+		}
+		if (itemBlock instanceof ItemOreDict) {
+			((ItemOreDict)itemBlock).initOreDict();
 		}
 		
 		return block;

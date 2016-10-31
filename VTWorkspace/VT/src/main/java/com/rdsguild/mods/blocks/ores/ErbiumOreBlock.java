@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class ErbiumOreBlock extends BaseBlock {
 
-	public ErbiumOreBlock(String name) {
+	public ErbiumOreBlock(String name, String oreName) {
 		super(VTItems.Erbium, name);
 		
 		setHardness(3f);

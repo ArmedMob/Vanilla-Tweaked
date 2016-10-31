@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class BoronOreBlock extends BaseBlock {
 
-	public BoronOreBlock(String name) {
+	public BoronOreBlock(String name, String oreName) {
 		super(VTItems.Boron, name);
 		
 		setHardness(3f);

@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class LanthanumOreBlock extends BaseBlock {
 
-	public LanthanumOreBlock(String name) {
+	public LanthanumOreBlock(String name, String oreName) {
 		super(VTItems.Lanthanum, name);
 		
 		setHardness(3f);

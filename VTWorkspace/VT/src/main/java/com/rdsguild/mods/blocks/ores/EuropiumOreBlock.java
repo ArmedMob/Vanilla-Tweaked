@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class EuropiumOreBlock extends BaseBlock {
 
-	public EuropiumOreBlock(String name) {
+	public EuropiumOreBlock(String name, String oreName) {
 		super(VTItems.Europium, name);
 		
 		setHardness(3f);

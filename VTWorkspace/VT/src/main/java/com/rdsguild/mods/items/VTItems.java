@@ -2,12 +2,6 @@ package com.rdsguild.mods.items;
 
 import com.rdsguild.mods.Main;
 import com.rdsguild.mods.References;
-import com.rdsguild.mods.items.tools.VTAxe;
-import com.rdsguild.mods.items.tools.VTHoe;
-import com.rdsguild.mods.items.tools.VTPickaxe;
-import com.rdsguild.mods.items.tools.VTSpade;
-import com.rdsguild.mods.items.tools.VTSword;
-
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.SoundEvents;
@@ -115,34 +109,7 @@ public class VTItems {
 	public static BaseItem nuggetBoron;
 	
 	// Axes
-	public static VTAxe axeBoron;
-	public static VTAxe axeColumium;
-	public static VTAxe axeErbium;
-	public static VTAxe axeEuropium;
-	public static VTAxe axeLanthanum;
-	public static VTAxe axeLithium;
-	public static VTAxe axeMolybdenum;
-	public static VTAxe axeNeodymium;
-	public static VTAxe axeNickelSilver;
-	public static VTAxe axeSamarium;
-	public static VTAxe axeTantalum;
-	public static VTAxe axeTitanium;
-	public static VTAxe axeTriMetal;
 	
-	// Swords
-	public static VTSword swordBoron;
-	public static VTSword swordColumium;
-	public static VTSword swordErbium;
-	public static VTSword swordEuropium;
-	public static VTSword swordLanthanum;
-	public static VTSword swordLithium;
-	public static VTSword swordMolybdenum;
-	public static VTSword swordNeodymium;
-	public static VTSword swordNickelSilver;
-	public static VTSword swordSamarium;
-	public static VTSword swordTantalum;
-	public static VTSword swordTitanium;
-	public static VTSword swordTriMetal;
 	
 	public static void init() {			
 		//ToolMaterial
@@ -161,106 +128,62 @@ public class VTItems {
 		ToolMaterials.toolTriMetal.setRepairItem(new ItemStack(VTItems.ingotTriMetal));
 		
 		// VTIngots
-		ingotErbium = register(new BaseItem("ingotErbium").setCreativeTab(Main.instance.tab));
-		ingotEuropium = register(new BaseItem("ingotEuropium").setCreativeTab(Main.instance.tab));
-		ingotLanthanum = register(new BaseItem("ingotLanthanum").setCreativeTab(Main.instance.tab));
-		ingotNeodymium = register(new BaseItem("ingotNeodymium").setCreativeTab(Main.instance.tab));
-		ingotSamarium = register(new BaseItem("ingotSamarium").setCreativeTab(Main.instance.tab));		
-		ingotTitanium = register(new BaseItem("ingotTitanium").setCreativeTab(Main.instance.tab));
-		ingotTantalum = register(new BaseItem("ingotTantalum").setCreativeTab(Main.instance.tab));
-		ingotColumium = register(new BaseItem("ingotColumium").setCreativeTab(Main.instance.tab));
-		ingotMolybdenum = register(new BaseItem("ingotMolybdenum").setCreativeTab(Main.instance.tab));		
-		ingotTriMetal = register(new BaseItem("ingotTriMetal").setCreativeTab(Main.instance.tab));
-		ingotNickelSilver = register(new BaseItem("ingotNickelSilver").setCreativeTab(Main.instance.tab));		
-		ingotLithium = register(new BaseItem("ingotLithium").setCreativeTab(Main.instance.tab));		
-		ingotBoron = register(new BaseItem("ingotBoron").setCreativeTab(Main.instance.tab));
+		ingotErbium = register(new BaseItem("ingotErbium", "ingotErbium").setCreativeTab(Main.instance.tab));
+		ingotEuropium = register(new BaseItem("ingotEuropium", "ingotEuropium").setCreativeTab(Main.instance.tab));
+		ingotLanthanum = register(new BaseItem("ingotLanthanum", "ingotLanthanum").setCreativeTab(Main.instance.tab));
+		ingotNeodymium = register(new BaseItem("ingotNeodymium", "ingotNeodymium").setCreativeTab(Main.instance.tab));
+		ingotSamarium = register(new BaseItem("ingotSamarium", "ingotSamarium").setCreativeTab(Main.instance.tab));		
+		ingotTitanium = register(new BaseItem("ingotTitanium", "ingotTitanium").setCreativeTab(Main.instance.tab));
+		ingotTantalum = register(new BaseItem("ingotTantalum", "ingotTantalum").setCreativeTab(Main.instance.tab));
+		ingotColumium = register(new BaseItem("ingotColumium", "ingotColumium").setCreativeTab(Main.instance.tab));
+		ingotMolybdenum = register(new BaseItem("ingotMolybdenum", "ingotMalybdenum").setCreativeTab(Main.instance.tab));		
+		ingotTriMetal = register(new BaseItem("ingotTriMetal", "ingotTriMetal").setCreativeTab(Main.instance.tab));
+		ingotNickelSilver = register(new BaseItem("ingotNickelSilver", "ingotNickelSilver").setCreativeTab(Main.instance.tab));		
+		ingotLithium = register(new BaseItem("ingotLithium", "ingotLithium").setCreativeTab(Main.instance.tab));		
+		ingotBoron = register(new BaseItem("ingotBoron", "ingotBoron").setCreativeTab(Main.instance.tab));
 		
 		// VTDusts
-		dustErbium = register(new BaseItem("dustErbium").setCreativeTab(Main.instance.tab));
-		dustEuropium = register(new BaseItem("dustEuropium").setCreativeTab(Main.instance.tab));
-		dustLanthanum = register(new BaseItem("dustLanthanum").setCreativeTab(Main.instance.tab));
-		dustNeodymium = register(new BaseItem("dustNeodymium").setCreativeTab(Main.instance.tab));
-		dustSamarium = register(new BaseItem("dustSamarium").setCreativeTab(Main.instance.tab));		
-		dustTitanium = register(new BaseItem("dustTitanium").setCreativeTab(Main.instance.tab));
-		dustTantalum = register(new BaseItem("dustTantalum").setCreativeTab(Main.instance.tab));
-		dustColumium = register(new BaseItem("dustColumium").setCreativeTab(Main.instance.tab));
-		dustMolybdenum = register(new BaseItem("dustMolybdenum").setCreativeTab(Main.instance.tab));		
-		dustTriMetal = register(new BaseItem("dustTriMetal").setCreativeTab(Main.instance.tab));
-		dustNickelSilver = register(new BaseItem("dustNickelSilver").setCreativeTab(Main.instance.tab));		
-		dustLithium = register(new BaseItem("dustLithium").setCreativeTab(Main.instance.tab));		
-		dustBoron = register(new BaseItem("dustBoron").setCreativeTab(Main.instance.tab));
+		dustErbium = register(new BaseItem("dustErbium", "dustErbium").setCreativeTab(Main.instance.tab));
+		dustEuropium = register(new BaseItem("dustEuropium", "dustEuropium").setCreativeTab(Main.instance.tab));
+		dustLanthanum = register(new BaseItem("dustLanthanum", "dustLanthanum").setCreativeTab(Main.instance.tab));
+		dustNeodymium = register(new BaseItem("dustNeodymium", "dustNeodymium").setCreativeTab(Main.instance.tab));
+		dustSamarium = register(new BaseItem("dustSamarium", "dustSamarium").setCreativeTab(Main.instance.tab));		
+		dustTitanium = register(new BaseItem("dustTitanium", "dustTitanium").setCreativeTab(Main.instance.tab));
+		dustTantalum = register(new BaseItem("dustTantalum", "dustTantalum").setCreativeTab(Main.instance.tab));
+		dustColumium = register(new BaseItem("dustColumium", "dustColumium").setCreativeTab(Main.instance.tab));
+		dustMolybdenum = register(new BaseItem("dustMolybdenum", "dustMolybdenum").setCreativeTab(Main.instance.tab));		
+		dustTriMetal = register(new BaseItem("dustTriMetal", "dustTriMetal").setCreativeTab(Main.instance.tab));
+		dustNickelSilver = register(new BaseItem("dustNickelSilver", "dustNickelSilver").setCreativeTab(Main.instance.tab));		
+		dustLithium = register(new BaseItem("dustLithium", "dustLithium").setCreativeTab(Main.instance.tab));		
+		dustBoron = register(new BaseItem("dustBoron", "dustBoron").setCreativeTab(Main.instance.tab));
 		
 		// VTNuggets
-		nuggetErbium = register(new BaseItem("nuggetErbium").setCreativeTab(Main.instance.tab));
-		nuggetEuropium = register(new BaseItem("nuggetEuropium").setCreativeTab(Main.instance.tab));
-		nuggetLanthanum = register(new BaseItem("nuggetLanthanum").setCreativeTab(Main.instance.tab));
-		nuggetNeodymium = register(new BaseItem("nuggetNeodymium").setCreativeTab(Main.instance.tab));
-		nuggetSamarium = register(new BaseItem("nuggetSamarium").setCreativeTab(Main.instance.tab));		
-		nuggetTitanium = register(new BaseItem("nuggetTitanium").setCreativeTab(Main.instance.tab));
-		nuggetTantalum = register(new BaseItem("nuggetTantalum").setCreativeTab(Main.instance.tab));
-		nuggetColumium = register(new BaseItem("nuggetColumium").setCreativeTab(Main.instance.tab));
-		nuggetMolybdenum = register(new BaseItem("nuggetMolybdenum").setCreativeTab(Main.instance.tab));		
-		nuggetTriMetal = register(new BaseItem("nuggetTriMetal").setCreativeTab(Main.instance.tab));
-		nuggetNickelSilver = register(new BaseItem("nuggetNickelSilver").setCreativeTab(Main.instance.tab));		
-		nuggetLithium = register(new BaseItem("nuggetLithium").setCreativeTab(Main.instance.tab));		
-		nuggetBoron = register(new BaseItem("nuggetBoron").setCreativeTab(Main.instance.tab));
+		nuggetErbium = register(new BaseItem("nuggetErbium", "nuggetErbium").setCreativeTab(Main.instance.tab));
+		nuggetEuropium = register(new BaseItem("nuggetEuropium", "nuggetEuropium").setCreativeTab(Main.instance.tab));
+		nuggetLanthanum = register(new BaseItem("nuggetLanthanum", "nuggetLanthanum").setCreativeTab(Main.instance.tab));
+		nuggetNeodymium = register(new BaseItem("nuggetNeodymium", "nuggetNeodymium").setCreativeTab(Main.instance.tab));
+		nuggetSamarium = register(new BaseItem("nuggetSamarium", "nuggetSamarium").setCreativeTab(Main.instance.tab));		
+		nuggetTitanium = register(new BaseItem("nuggetTitanium", "nuggetTitanium").setCreativeTab(Main.instance.tab));
+		nuggetTantalum = register(new BaseItem("nuggetTantalum", "nuggetTantalum").setCreativeTab(Main.instance.tab));
+		nuggetColumium = register(new BaseItem("nuggetColumium", "nuggetColumium").setCreativeTab(Main.instance.tab));
+		nuggetMolybdenum = register(new BaseItem("nuggetMolybdenum", "nuggetMolybdenum").setCreativeTab(Main.instance.tab));		
+		nuggetTriMetal = register(new BaseItem("nuggetTriMetal", "nuggetTriMetal").setCreativeTab(Main.instance.tab));
+		nuggetNickelSilver = register(new BaseItem("nuggetNickelSilver", "nuggetNickelSilver").setCreativeTab(Main.instance.tab));		
+		nuggetLithium = register(new BaseItem("nuggetLithium", "nuggetLithium").setCreativeTab(Main.instance.tab));		
+		nuggetBoron = register(new BaseItem("nuggetBoron", "nuggetBoron").setCreativeTab(Main.instance.tab));
 		
 		// Axes
-		axeBoron = register(new VTAxe(ToolMaterials.toolBoron, "axeBoron")); 
-		axeColumium = register(new VTAxe(ToolMaterials.toolColumium, "axeColumium"));
-		axeErbium = register(new VTAxe(ToolMaterials.toolErbium, "axeErbium"));
-		axeEuropium = register(new VTAxe(ToolMaterials.toolEuropium, "axeEuropium"));
-		axeLanthanum = register(new VTAxe(ToolMaterials.toolLanthanum, "axeLanthanum"));
-		axeLithium = register(new VTAxe(ToolMaterials.toolLithium, "axeLithium"));
-		axeMolybdenum = register(new VTAxe(ToolMaterials.toolMolybdenum, "axeMolybdenum"));
-		axeNeodymium = register(new VTAxe(ToolMaterials.toolNeodymium, "axeNeodymium"));
-		axeNickelSilver = register(new VTAxe(ToolMaterials.toolNickelSilver, "axeNickelSilver"));
-		axeSamarium = register(new VTAxe(ToolMaterials.toolSamarium, "axeSamarium"));
-		axeTantalum = register(new VTAxe(ToolMaterials.toolTantalum, "axeTantalum"));
-		axeTitanium = register(new VTAxe(ToolMaterials.toolTitanium, "axeTitanium"));
-		axeTriMetal = register(new VTAxe(ToolMaterials.toolTriMetal, "axeTriMetal"));
 		
-		// Swords
-		swordBoron = register(new VTSword(ToolMaterials.toolBoron, "swordBoron"));
-		swordColumium = register(new VTSword(ToolMaterials.toolColumium, "swordColumium"));
-		swordErbium = register(new VTSword(ToolMaterials.toolErbium, "swordErbium"));
-		swordEuropium = register(new VTSword(ToolMaterials.toolEuropium, "swordEuropium"));
-		swordLanthanum = register(new VTSword(ToolMaterials.toolLanthanum, "swordLanthanum"));
-		swordLithium = register(new VTSword(ToolMaterials.toolLithium, "swordLithium"));
-		swordMolybdenum = register(new VTSword(ToolMaterials.toolMolybdenum, "swordMolybdenum"));
-		swordNeodymium = register(new VTSword(ToolMaterials.toolNeodymium, "swordNeodymium"));
-		swordNickelSilver = register(new VTSword(ToolMaterials.toolNickelSilver, "swordNickelSilver"));
-		swordSamarium = register(new VTSword(ToolMaterials.toolSamarium, "swordSamarium"));
-		swordTantalum = register(new VTSword(ToolMaterials.toolTantalum, "swordTantalum"));
-		swordTitanium = register(new VTSword(ToolMaterials.toolTitanium, "swordTitanium"));
-		swordTriMetal = register(new VTSword(ToolMaterials.toolTriMetal, "swordTriMetal"));
 	}
 		
 	private static <T extends Item> T register(T item) {
 		GameRegistry.register(item);
 		
-		if (item instanceof BaseItem) {
-			((BaseItem)item).registerItemModel();
+		if (item instanceof ItemModelProvider) {
+			((ItemModelProvider)item).registerItemModel(item);
 		}
-		
-		if (item instanceof VTAxe) {
-			((VTAxe)item).registerItemModel(item);
-		}
-		
-		if (item instanceof VTSword) {
-			((VTSword)item).registerItemModel(item);
-		}
-		
-		if (item instanceof VTHoe) {
-			((VTHoe)item).registerItemModel(item);
-		}
-		
-		if (item instanceof VTSpade) {
-			((VTSpade)item).registerItemModel(item);
-		}
-		
-		if (item instanceof VTPickaxe) {
-			((VTPickaxe)item).registerItemModel(item);
+		if (item instanceof ItemOreDict) {
+			((ItemOreDict)item).initOreDict();
 		}
 		
 		return item;

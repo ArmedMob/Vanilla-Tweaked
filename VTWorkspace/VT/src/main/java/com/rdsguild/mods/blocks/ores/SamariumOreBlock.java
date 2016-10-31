@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class SamariumOreBlock extends BaseBlock {
 
-	public SamariumOreBlock(String name) {
+	public SamariumOreBlock(String name, String oreName) {
 		super(VTItems.Samarium, name);
 		
 		setHardness(3f);

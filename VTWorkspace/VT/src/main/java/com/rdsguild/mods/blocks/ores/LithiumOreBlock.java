@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class LithiumOreBlock extends BaseBlock {
 
-	public LithiumOreBlock(String name) {
+	public LithiumOreBlock(String name, String oreName) {
 		super(VTItems.Lithium, name);
 		
 		setHardness(3f);

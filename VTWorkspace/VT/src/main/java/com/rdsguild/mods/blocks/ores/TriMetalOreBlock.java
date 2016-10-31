@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class TriMetalOreBlock extends BaseBlock {
 
-	public TriMetalOreBlock(String name) {
+	public TriMetalOreBlock(String name, String oreName) {
 		super(VTItems.TriMetal, name);
 		
 		setHardness(3f);

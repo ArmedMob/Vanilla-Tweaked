@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class MolybdenumOreBlock extends BaseBlock {
 
-	public MolybdenumOreBlock(String name) {
+	public MolybdenumOreBlock(String name, String oreName) {
 		super(VTItems.Molybdenum, name);
 		
 		setHardness(3f);

@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class NeodymiumOreBlock extends BaseBlock {
 
-	public NeodymiumOreBlock(String name) {
+	public NeodymiumOreBlock(String name, String oreName) {
 		super(VTItems.Neodymium, name);
 		
 		setHardness(3f);

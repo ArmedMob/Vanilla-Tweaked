@@ -8,7 +8,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class TitaniumOreBlock extends BaseBlock {
 
-	public TitaniumOreBlock(String name) {
+	public TitaniumOreBlock(String name, String oreName) {
 		super(VTItems.Titanium, name);
 		
 		setHardness(3f);

@@ -18,9 +18,9 @@ public class ClientProxy extends CommonProxy {
 		
 		MinecraftForge.EVENT_BUS.register(this);
 		
-		VTItems.init();
-		VTOreBlocks.init();		
+		VTOreBlocks.init();
 		VTBlocks.init();
+		VTItems.init();		
 	}
 	
 	@Override
