@@ -1,9 +1,14 @@
 package com.rdsguild.mods.proxies;
 
+import com.rdsguild.mods.Reference;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 
 public class ClientOnlyProxy extends CommonProxy {
 
@@ -36,5 +41,9 @@ public class ClientOnlyProxy extends CommonProxy {
 		return false;
 	}
 
-	
+	@Override
+	public void registerItemRenderer(Item item, int meta, String id) {
+		
+		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(Reference.MODID + ":" + id, "inventory"));;
+	}
 }

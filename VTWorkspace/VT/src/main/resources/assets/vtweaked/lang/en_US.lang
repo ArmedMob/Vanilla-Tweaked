@@ -1,7 +1,12 @@
 #Items
-item.purple_glowstone_dust.name=Purple Glowstone Dust
+item.ingotT2oopy.name=t2oopy's Magical Ingot
+item.bootsT2oopy.name=t2oopy's Magical Boots
+item.leggingsT2oopy.name=t2oopy's Magical Leggings
+item.chestplateT2oopy.name=t2oopy's Magical Chestplate
+item.helmetT2oopy.name=t2oopy's Magical Helmet
+item.gemT2oopy.name=t2oopy's Magical Gem
 
-#CreativeTabs
-itemGroup.tabVTItems=VTweaked Items
-itemGroup.tabVTBlocks=VTweaked Blocks
-itemGroup.tabVTMisc=VTweaked Misc
+#Blocks
+tile.oreCopper.name=Copper Ore
+tile.oreT2oopy.name=t2oopy's Magical Ore
+tile.blockT2oopy.name=t2oopy's Magical Block
