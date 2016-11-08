@@ -1,6 +1,9 @@
 package com.rdsguild.mods.items;
 
+import com.rdsguild.mods.Reference;
+
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -19,10 +22,10 @@ public class VTItems {
 	public static ItemOre ingotZinc;
 	public static ItemOre ingotT2oopy;
 	public static ItemOre gemT2oopy;
-	public static ItemBase bootsT2oopy;
-	public static ItemBase leggingsT2oopy;
-	public static ItemBase chestplateT2oopy;
-	public static ItemBase helmetT2oopy;
+	public static ItemArmor bootsT2oopy;
+	public static ItemArmor leggingsT2oopy;
+	public static ItemArmor chestplateT2oopy;
+	public static ItemArmor helmetT2oopy;
 	
 	public static void init() {
 		
@@ -40,10 +43,10 @@ public class VTItems {
 		//t2oopy's magical stuff
 		ingotT2oopy = (ItemOre) register(new ItemOre("ingotT2oopy", "ingotT2oopy").setCreativeTab(CreativeTabs.MATERIALS));
 		gemT2oopy = (ItemOre) register(new ItemOre("gemT2oopy", "gemT2oopy").setCreativeTab(CreativeTabs.MATERIALS));
-		bootsT2oopy = (ItemBase) register(new ItemBase("bootsT2oopy").setCreativeTab(CreativeTabs.COMBAT));
-		leggingsT2oopy = (ItemBase) register(new ItemBase("leggingsT2oopy").setCreativeTab(CreativeTabs.COMBAT));
-		chestplateT2oopy = (ItemBase) register(new ItemBase("chestplateT2oopy").setCreativeTab(CreativeTabs.COMBAT));
-		helmetT2oopy = (ItemBase) register(new ItemBase("helmetT2oopy").setCreativeTab(CreativeTabs.COMBAT));
+		bootsT2oopy = register(new ItemArmor(Reference.t2oopyArmorMaterial, EntityEquipmentSlot.FEET, "bootsT2oopy"));
+		leggingsT2oopy = register(new ItemArmor(Reference.t2oopyArmorMaterial, EntityEquipmentSlot.LEGS, "leggingsT2oopy"));
+		chestplateT2oopy = register(new ItemArmor(Reference.t2oopyArmorMaterial, EntityEquipmentSlot.CHEST, "chestplateT2oopy"));
+		helmetT2oopy = register(new ItemArmor(Reference.t2oopyArmorMaterial, EntityEquipmentSlot.HEAD, "helmetT2oopy"));
 		
 	}
 	

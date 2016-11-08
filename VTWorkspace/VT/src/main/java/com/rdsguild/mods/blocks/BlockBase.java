@@ -3,6 +3,7 @@ package com.rdsguild.mods.blocks;
 import com.rdsguild.mods.VTweaked;
 import com.rdsguild.mods.items.IItemModelProvider;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -12,7 +13,7 @@ public class BlockBase extends Block implements IItemModelProvider {
 	protected String name;
 	
 	
-	public BlockBase(Material material, String name) {
+	public BlockBase(Material material, String name, MapColor color) {
 		
 		super(material);
 		this.name = name;		
@@ -31,6 +32,5 @@ public class BlockBase extends Block implements IItemModelProvider {
 		
 		super.setCreativeTab(tab);
 		return this;
-	}
-	
+	}	
 }

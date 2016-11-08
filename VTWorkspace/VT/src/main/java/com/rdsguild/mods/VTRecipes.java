@@ -18,6 +18,7 @@ public class VTRecipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(VTItems.gemT2oopy, " X ", "X X", " X ", 'X', "ingotT2oopy"));
 		GameRegistry.addShapelessRecipe(new ItemStack(VTItems.ingotT2oopy, 4),  VTItems.gemT2oopy);
 		GameRegistry.addSmelting(VTBlocks.oreT2oopy, new ItemStack(VTItems.ingotT2oopy, 2), 0.1235f);
+		GameRegistry.addSmelting(VTBlocks.netherOreT2oopy, new ItemStack(VTBlocks.blockT2oopy, 4), 0.2470f);
 		GameRegistry.addShapelessRecipe(new ItemStack(VTItems.gemT2oopy, 9), VTBlocks.blockT2oopy);
 		
 	}

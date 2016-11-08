@@ -5,10 +5,12 @@ import com.rdsguild.mods.VTRecipes;
 import com.rdsguild.mods.blocks.VTBlocks;
 import com.rdsguild.mods.entities.CustomDataHandler;
 import com.rdsguild.mods.items.VTItems;
+import com.rdsguild.mods.world.VTWorldGen;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public abstract class CommonProxy {
 
@@ -19,6 +21,7 @@ public abstract class CommonProxy {
 		VTBlocks.init();
 		VTItems.init();	
 		VTRecipes.init();
+		GameRegistry.registerWorldGenerator(new VTWorldGen(), 3);
 	}
 	
 	public void init() {
